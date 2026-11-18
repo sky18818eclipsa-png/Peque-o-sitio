@@ -1,0 +1,302 @@
+
+html {
+  font-family: system-ui, sans-serif;
+  
+}
+
+body {
+    background-image: url("../img/estrellas\ fondo.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.presentacion {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.presentacion__texto {
+    min-width: 0;
+}
+
+.presentacion__ojo {
+    width: 110%;
+    height: 460px;
+    background: #000;
+    overflow: hidden;
+}
+
+.presentacion__ojo iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+img {
+  display: block;
+  max-width: 102%;
+}
+
+a:focus-visible,
+.boton:focus-visible {
+  outline: 3px solid #000000;
+  outline-offset: 3px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 48rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.encabezado {
+  padding: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.encabezado__contenido {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.marca {
+   width: 100%;
+    margin: 0;
+}
+
+.marca img {
+    display: block;
+    width: 100%;
+    height: auto;
+ }   
+
+.navegacion a {
+    display:flexbox ;
+     display: inline-flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    width: fit-content;
+    margin: auto;
+
+    padding: 12px 35px;
+
+    background-color: #849653;
+    border: 2px solid #fefffd;
+    
+}
+
+
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navegacion a:hover {
+    color: #f5e6a8;
+}
+
+
+.presentacion {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+
+.titulo-con-gif {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo-con-gif img {
+    width: 40 px;
+    height: auto;
+}
+
+.Universo-gif {
+  display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 230px;
+  }
+
+.Universo-gif img {
+   width:  230px;
+   height: auto;
+  }
+
+  .presentacion-Universo {
+   color: #fbfcfff8;
+  }
+
+
+
+.tarjeta {
+  margin-bottom: 2rem;
+  padding: 30px ;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid #000000;
+  
+
+  /*Gif de fondo*/
+  background-color: #19287cf8;
+
+  border-radius: 18 px;
+  border-color: #574fbe;
+
+}
+
+.tarjeta[data-state="SUEÑO "] {
+  
+  background: #002b75;
+}
+
+.tarjeta[data-state="SUEÑO"] .tarjeta__estado {
+  color: #5ab2ff;
+}
+
+.tarjeta[data-state="INESTABLE "] {
+  
+  background: #aa6600;
+}
+
+.tarjeta[data-state="INESTABLE"] .tarjeta__estado {
+  color: #e78b00;
+}
+
+.tarjeta[data-state="PESADILLA"] {
+  border-left-color: #f70000;
+  border-right:#f70000;
+}
+
+.tarjeta[data-state="PESADILLA"] .tarjeta__estado {
+  color: #ff0000;
+}
+
+
+.tarjeta__titulo {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #a7b4b3;
+}
+
+.tarjeta__estado {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+.tarjeta p {
+  color: #eeeeee;
+  
+}
+
+
+.boton {
+  padding: 0.7rem 1rem;
+  border: 50;
+  border-radius: 0.5rem;
+  background: #221a99;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background: #463eb4;
+}
+
+.aviso,
+.detalle {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 0rem;
+  background: #d9a02c;
+}
+
+.imagen-proyecto {
+  border-radius: 1.75rem;
+}
+
+.pie {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  background: #110031;
+  color: #044e97;
+  }
+  /* =====================================
+   PERSONAJE QUE SIGUE AL CURSOR
+===================================== */
+
+#personaje-cursor {
+    position: fixed;
+
+    width: 100px;
+    height: auto;
+
+    left: 0;
+    top: 0;
+
+    pointer-events: none;
+    z-index: 9999;
+
+    transform: translate(1px, 1px);
+
+    opacity: 0;
+    transition: opacity 0.7s ease;
+
+    object-fit: contain;
+}
+.creador__lienzo {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    aspect-ratio: 4 / 3;
+}
+
+.creador__lienzo iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #17202a;
+    display: block;
+}
+
+.ventana {
+    background-color: #f5f1dcfb;
+    border: 3px solid #0f6dc5;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 850px;
+    box-shadow: 5px 5px 0 #343a29;
+}
+
+.ventana__barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0050e4;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.ventana__contenido {
+    padding: 20px;
+    color: #343a29;
+}

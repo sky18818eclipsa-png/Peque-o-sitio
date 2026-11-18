@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Conoce mas de Liminalia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/personaje-cursor.js" defer></script>
+    </head>
+    <body>
+      <header class="encabezado">
+        <div class="encabezado__contenido contenedor">
+          <div class="marca">
+                <img src="img/Liminalia logo.jpeg" alt="Logo de Liminalia">
+           </div>
+
+            <nav class="navegacion" aria-label="Navegacion principal">
+             <a href="index.html" aria-current="page">Inicio</a>
+             <a href="Personajes.html">Universo</a>
+             <a href="Juego de mesa" >creador de sueños</a>
+        </div>
+         </header>
+
+      <main class="contenedor">
+        <article class="detalle">
+          <header>
+            <p class="etiqueta" ><h1>Creador de sueños</h1>
+            <p>Haz click en el lienzo para comenzar a dibujar tu sueño.</p>
+           <div class="creador__lienzo">
+        <div class="creador__lienzo">
+        <iframe
+          src="p5/creador/index.html"
+          title="Paint Liminalia"
+         ></iframe>
+        </div>
+      </div>
+       <img
+       id="personaje-cursor"
+       src="img/personajes/oveja.png"
+       alt=""
+       aria-hidden="true">
+      
+       </main>
+       <footer class="pie">
+      <div class="contenedor">
+        <p>Liminalia © 2026-2026 </p>
+      </div>
+    </footer>
+    </body>
+    </html>
+  
+
+

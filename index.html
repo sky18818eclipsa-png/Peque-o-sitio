@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liminalia - Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+   
+    <script src="js/app.js" defer></script>
+    <script src="js/personaje-cursor.js" defer></script>
+
+</head>
+<body>
+   <header class="encabezado">
+       <div class="encabezado__contenido contenedor">
+           <div class="marca">
+                <img src="img/Liminalia logo.jpeg" alt="Logo de Liminalia">
+           </div>
+
+            <nav class="navegacion" aria-label="Navegacion principal">
+             <a href="index.html" aria-current="page">Inicio</a>
+             <a href="Personajes.html">Universo</a>
+             <a href="Juego de mesa">creador de sueños</a>
+            </nav>
+       </div>
+       
+   </header>
+
+   <main class="contenedor">
+     <article class="detalle">
+       <section class="presentacion">
+           <div class="presentacion_texto">
+         <img src="img/imagen de bienvenida.png" alt="Logo de Liminalia">
+            <div class="titulo-con-gif"> 
+              <h1>¿Quienes somos?</h1>
+               <img src="img/bullet.gif" alt="bola">
+              </div> 
+                <p>
+                    <h4>Liminalia es un juego de mesa Indie.
+                </p>
+
+                <p>
+                    Una experiencia de juego diferente que combina
+                    <span class="remarcar">
+                        exploración tridimensional, estrategia y estética dreamcore.
+                    </span>
+                    Cada jugador controla a un personaje y estará atrapado
+                    en un mismo sueño, donde deberán recorrer habitaciones
+                    imposibles y conseguir la forma de escapar
+                </p>
+                </h4>
+            </div>
+
+            <div class="presentacion__ojo">
+                <iframe
+                    src="p5/ojo/index.html"
+                    title="Ojo interactivo"
+                ></iframe>
+            </div>
+
+        </section>
+
+       <section>
+         <h2>???</h2>
+         
+          <article class="tarjeta" data-state="SUEÑO">
+            <h3 class="tarjeta__titulo">DREAM_OS // SISTEMA DE SUEÑO</h3>
+            <p class="tarjeta__estado" role="status">SUEÑO</p>
+             <p>
+                  Personajes presentes:
+                <strong id="presentes">0</strong>
+             </p>
+
+             <p>
+               Capacidad máxima:
+               <strong id="capacidad">10</strong>
+            </p>
+
+             <p>
+               Estado actual:
+              <strong class="tarjeta__estado" id="estado" aria-live="polite">
+               SUEÑO
+             </strong>
+           </p>
+
+            <p id="mensaje" aria-live="polite">
+              El entorno parece estable. Puedes continuar.
+            </p>
+
+            <button class="boton" id="agregar" type="button">
+               Agregar personaje
+            </button>
+
+            <button class="boton" id="retirar" type="button">
+              Retirar personaje
+           </button>
+
+          </article>
+
+
+       </section>
+      </article>
+   </main>
+   <footer class="pie">
+      <div class="contenedor">
+        <p>Liminalia © 2026-2026 </p>
+      </div>
+    </footer>
+     <img
+     id="personaje-cursor"
+     src="img/personajes/oveja.png"
+     alt=""
+     aria-hidden="true"
+      >
+</body>
+</html>
