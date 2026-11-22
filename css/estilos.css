@@ -64,6 +64,9 @@ a:focus-visible,
   width: 100%;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .marca {
@@ -77,6 +80,8 @@ a:focus-visible,
     height: auto;
  }   
 
+/* BOTONES DE NAVEGACION*/
+
 .navegacion a {
     display:flexbox ;
      display: inline-flexbox;
@@ -86,7 +91,7 @@ a:focus-visible,
     gap: 35px;
 
     width: fit-content;
-    margin: auto;
+    margin: 10px;
 
     padding: 12px 35px;
 
@@ -94,8 +99,6 @@ a:focus-visible,
     border: 2px solid #fefffd;
     
 }
-
-
 
 .navegacion a {
     color: #ffffff;
@@ -161,6 +164,8 @@ a:focus-visible,
   border-color: #574fbe;
 
 }
+
+/*TARJETA DE ESTADO DE SUEÑO Y PERSONAJES PRESENTES*/
 
 .tarjeta[data-state="SUEÑO "] {
   
@@ -240,9 +245,7 @@ a:focus-visible,
   background: #110031;
   color: #044e97;
   }
-  /* =====================================
-   PERSONAJE QUE SIGUE AL CURSOR
-===================================== */
+  /* PERSONAJE QUE SIGUE AL CURSOR*/
 
 #personaje-cursor {
     position: fixed;
@@ -277,26 +280,266 @@ a:focus-visible,
     display: block;
 }
 
-.ventana {
-    background-color: #f5f1dcfb;
-    border: 3px solid #0f6dc5;
-    padding: 0;
-    margin: 30px auto;
-    max-width: 850px;
-    box-shadow: 5px 5px 0 #343a29;
+/* ORGANIZACIÓN DE LAS DOS VENTANAS FALSAS */
+
+.universo-introduccion {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    margin: 50px 0;
 }
+
+.universo-bloque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* VENTANA RETRO */
+
+.ventana {
+    background-color: #fff4ca;
+    border: 3px solid #1768d8;
+    box-shadow: 6px 6px 0px #172d75;
+    
+    
+    overflow: hidden;
+}
+
+
+/* BARRA SUPERIOR */
 
 .ventana__barra {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0050e4;
     color: white;
-    padding: 10px 15px;
+
+    padding: 10px 14px;
+    border-bottom: 3px solid #1768d8;
+    background: linear-gradient(
+        to bottom,
+        #3285ff,
+        #0052d9
+    );
+    font-family: "Courier Prime", monospace;
     font-weight: bold;
 }
 
+
+/* SIMBOLOS DE LA VENTANA */
+
+.ventana__controles {
+    display: flex;
+    gap: 12px;
+    font-size: 18px;
+}
+
+
+/* TEXTO */
+
 .ventana__contenido {
+    padding: 25px;
+    color: #000000;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.ventana__contenido p {
+    margin: 0;
+}
+
+
+/* IMÁGENES */
+
+.universo-imagen {
+    margin: 0;
+    width: 100%;
+}
+
+.universo-imagen img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    border: 3px solid #1768d8;
+    box-shadow: 6px 6px 0px #172d75;
+}
+
+
+/* DISEÑO PARA PANTALLAS PEQUEÑAS */
+
+@media (max-width: 750px) {
+
+    .universo-bloque {
+        grid-template-columns: 1fr;
+    }
+
+    .universo-bloque--invertido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .universo-imagen img {
+        height: auto;
+        max-height: 320px;
+    }
+
+}
+
+.franja-ajedrez {
+    width: 100%;
+    height: 20px;
+
+    background:
+        repeating-conic-gradient(
+            #ffffff 0% 25%,
+            #000000 0% 50%
+        );
+
+    background-size: 20px 20px;
+}
+
+.seccion-personajes {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.ventana-personajes {
+    background-color: #eeeada;
+    border: 4px solid #1768d8;
+    box-shadow: 5px 5px 0 #172d75;
+    overflow: hidden;
+}
+
+.ventana-personajes__barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        #3285ff,
+        #0052d9
+    );
+
+    color: white;
+    padding: 10px 14px;
+
+    font-family: "Courier Prime", monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.controles-ventana {
+    display: flex;
+    gap: 5px;
+}
+
+.controles-ventana span {
+    width: 30px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        #75b9ff,
+        #1260d9
+    );
+
+    border: 2px solid #d5e8ff;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.ventana-personajes__contenido {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 10px;
+
     padding: 20px;
-    color: #343a29;
+    min-height: 280px;
+    background-color: #eeeada;
+     border: 4px solid #1768d8;
+    box-shadow: 5px 5px 0 #172d75;
+    overflow: hidden;
+}
+
+.personaje-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.personaje-visual img {
+    width: 100%;
+    max-width: 190px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.flechas-imagen {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.flechas-imagen button {
+    background: none;
+    border: none;
+    color: #102d83;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.personaje-info {
+    padding: 10px;
+    color: #171717;
+}
+
+.personaje-titulo h3 {
+    margin: 0 0 15px;
+    color: #102d83;
+    font-family: "Joint", sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.personaje-info p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 600px) {
+
+    .ventana-personajes__contenido {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .personaje-visual img {
+        height: 180px;
+    }
+
+    .personaje-info {
+        text-align: center;
+    }
+
+    .personaje-titulo h3 {
+        font-size: 26px;
+    }
+
 }

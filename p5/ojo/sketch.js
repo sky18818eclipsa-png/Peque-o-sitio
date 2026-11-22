@@ -1,9 +1,8 @@
 let ojoBase;
 let iris;
 
-  // PRELOAD -----------------------------------
 async function setup() {
-  createCanvas(400, 400);
+  createCanvas(200, 500);
   imageMode(CENTER);
 
   ojoBase = await loadImage("ojoBase.png");
@@ -15,25 +14,33 @@ function draw() {
 
   background(0);
 
+  let cantidad = 3;
+  let separacion = 20;
+  let ojoW = width - 20;
+  let ojoH = ojoW * 0.6;
+  let irisSize = ojoW * 0.25;
+  let maxDist = ojoW * 0.133;
+
+  // Alto total de la columna, para centrarla verticalmente
+  let totalAlto = cantidad * ojoH + (cantidad - 1) * separacion;
+  let inicioY = (height - totalAlto) / 2;
+
   let ojoX = width / 2;
-  let ojoY = height / 2;
 
-  // Ojo
-  image(ojoBase, ojoX, ojoY, 300, 180);
+  for (let i = 0; i < cantidad; i++) {
+    let ojoY = inicioY + i * (ojoH + separacion) + ojoH / 2;
 
-  // iris
-  let dx = mouseX - ojoX;
-  let dy = mouseY - ojoY;
+    image(ojoBase, ojoX, ojoY, ojoW, ojoH);
 
-  let angulo = atan2(dy, dx);
-  let distancia = dist(mouseX, mouseY, ojoX, ojoY);
+    let dx = mouseX - ojoX;
+    let dy = mouseY - ojoY;
 
-  let maxDist = 40;
-  distancia = min(distancia, maxDist);
+    let angulo = atan2(dy, dx);
+    let distancia = min(dist(mouseX, mouseY, ojoX, ojoY), maxDist);
 
-  let irisX = ojoX + cos(angulo) * distancia;
-  let irisY = ojoY + sin(angulo) * distancia;
+    let irisX = ojoX + cos(angulo) * distancia;
+    let irisY = ojoY + sin(angulo) * distancia;
 
-  // Iris
-  image(iris, irisX, irisY, 75, 75);
+    image(iris, irisX, irisY, irisSize, irisSize);
+  }
 }

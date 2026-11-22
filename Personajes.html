@@ -6,6 +6,7 @@
       <title>Conoce mas de Liminalia</title>
     <link rel="stylesheet" href="css/estilos.css">
     <script src="js/personaje-cursor.js" defer></script>
+    <script src="js/personajes.js" defer></script>
     </head>
     <body>
       <header class="encabezado">
@@ -31,136 +32,145 @@
                 <h1>Universo</h1>
             </div>
 
-              <figure>
-                <img
-                    class="cuadro ojos"
-                    src="img/1ºimagen de Universo.png"
-                    alt="Ilustración del universo">
-            </figure>
+    <section class="universo-introduccion">
 
+    <!-- PRIMERA VENTANA -->
+    <article class="universo-bloque">
 
-    <section class="ventana universo-intro">
-      
+        <div class="ventana">
 
-        <div class="ventana__barra">
-            <span>UNIVERSO.exe</span>
-            <span> _  □  × </span>
-        </div>
+            <div class="ventana__barra">
+                <span>UNIVERSO.exe_</span>
 
-        <div class="ventana__contenido">
+                <div class="ventana__controles" aria-hidden="true">
+                    <span>□</span>
+                    <span>×</span>
+                </div>
+            </div>
 
-
-               <p>
-                En este universo, cuatro peluches intentan
-                encontrar la salida. Cada uno carga con algo
-                que no quiere dejar atrás. Algunos se aferran
-                a lo que perdieron; otros, a lo que creen merecer.
-                Hay quienes se esconden detrás de sus
-                responsabilidades y quienes prefieren dormir
-                antes que enfrentarse a sus problemas.
+            <div class="ventana__contenido">
+                <p>
+                    En este universo, cuatro peluches intentan
+                    encontrar la salida. Cada uno carga con algo
+                    que no quiere dejar atrás. Algunos se aferran
+                    a lo que perdieron; otros, a lo que creen
+                    merecer. Hay quienes se esconden detrás de
+                    sus responsabilidades y quienes prefieren
+                    dormir antes que enfrentarse a sus problemas.
                 </p>
-
-            </section>
-
-              <figure>
-                <img
-                    class="abrazo"
-                    src="img/abrazo (1).jpg"
-                    alt=" peluche abrazo">
-              </figure>
-
-          <section class="ventana universo-intro ">
-          
-           <div class="ventana__barra">
-              <span>UNIVERSO.exe</span>
-              <span> _  □  × </span>
-           </div>
-          <div class="ventana__contenido"></div>
-
-            <p>
-                Para avanzar deberán explorar distintos escenarios,
-                extrañas habitaciones y conseguir las llaves para
-                encontrar la salida de este sueño profundo antes
-                de que entren en desesperación. Pero no te preocupes:
-                cada uno tiene algo de control sobre el sueño.
-                Solo debes aprender a usar sus habilidades para
-                sacar ventaja y escapar.
-            </p>
+            </div>
 
         </div>
-    </section>
+
+        <figure class="universo-imagen">
+            <img src="img/1ºimagen de Universo.png"
+                 alt="Imagen introductoria del universo de Liminalia">
+        </figure>
+
+    </article>
+
+
+    <!-- SEGUNDA VENTANA -->
+    <article class="universo-bloque universo-bloque--invertido">
+
+        <figure class="universo-imagen">
+            <img src="img/abrazo (1).jpg"
+                 alt="Ilustración de los peluches de Liminalia">
+        </figure>
+
+        <div class="ventana">
+
+            <div class="ventana__barra">
+                <span>UNIVERSO.exe_</span>
+
+                <div class="ventana__controles" aria-hidden="true">
+                    <span>□</span>
+                    <span>×</span>
+                </div>
+            </div>
+
+            <div class="ventana__contenido">
+                <p>
+                    Para avanzar deberán explorar distintos
+                    escenarios, extrañas habitaciones y conseguir
+                    las llaves para encontrar la salida de este
+                    sueño profundo antes de que entren en
+                    desesperación. Pero no te preocupes: cada uno
+                    tiene algo de control sobre el sueño. Solo
+                    debes aprender a usar sus habilidades para
+                    sacar ventaja y escapar.
+                </p>
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
    
+    <!--Aquí va la sección de personajes -->
+    <section class="seccion-personajes">
+      <!-- FRANJA SUPERIOR-->
 
-    <section class="personajes">
-        <!-- Aquí irá sección de personajes -->
-    </section>
+      <div class="franja-ajedrez"></div>
+       <!-- VENTANA-->
 
-</article>
+      <div class="ventana-personajes">
+        <!--BARRA AZUL-->
 
+          <header class="ventana-personajes__barra">
+            <span>☆ Personajes</span>
 
-          <section>
-            <h1>Personajes</h1>
-            <h2>Osluvio </h2>
-           <ul>
-            <li>deprimido</li>
-            <li>pesimista</li>
-            <li>emocionalmente vulnerable</li>
-            </ul>
-            <p>
-              Está atravesando un duelo y le cuesta aceptar la pérdida;
-            se aferra a los recuerdos porque teme olvidarlos.
-            No le importa que las cosas salgan mal, 
-            suele resignarse de inmediato con total calma y apatia.
-            
-            </p>
+              <div class="controles-ventana"></div>
+
+                <span>_</span>
+                <span>□</span>
+                <span>×</span>
+            </div>
+        </header>
+           <!-- EL CONTENIDO -->
            
+             <div class="ventana-personajes__contenido">
+            <!-- IMAGEN Y FLECHAS -->
+                <div class="personaje-visual">
+
+                <img
+                    id="imagen-personaje"
+                    src="img/personajes/oso.png"
+                    alt="Osluvio"
+                >
+
+                <div class="flechas-imagen">
+                    <button type="button" data-cambio="-1">◀</button>
+                    <button type="button" data-cambio="1">▶</button>
+                </div>
+
+          </div>
+
+           <!--INFORMACIÓN DEL PERSONAJE-->
+          <div class="personaje-info">
+             <div class="personaje-titulo">
+               <h3 id="nombre-personaje">Osluvio</h3>
+             </div>
+              <ul id="rasgos-personaje"></ul>
+
+              <p id="descripcion-personaje">
+                Está atravesando un duelo y le cuesta
+                aceptar aquello que perdió.
+                se aferra a los recuerdos porque teme olvidarlos.
+                No le importa que las cosas salgan mal, 
+                suele resignarse de inmediato con total calma y apatia.
+                 
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- FRANJA INFERIOR -->
+        <div class="franja-ajedrez"></div>
+
+</section>
+
           
-           <h2>Don Pomponio de las praderas verdes </h2>
-           <ul>
-             <li>consentido</li>
-             <li>orgulloso</li>
-             <li>inmaduro</li>
-            </ul>
-             <p> Está acostumbrado a tenerlo todo 
-              y se resiste a crecer, asumir responsabilidades 
-              y dejar de sentirse un rey, aunque su corona sea de cartón.
-             </p>
-           
-
-            <h2>Sergio</h2>
-           <ul>
-            <li>serio</li>
-            <li>responsable</li>
-            <li>agotado</li>
-          </ul>
-        
-            <p>
-            Es una oveja de negocios, principal mente se dedica 
-            a la contaduria pero es sobreexplotado, trabaja demasiado 
-            por el sueldo minimo, cumple con todo y siente 
-            que no puede permitirse descansar.
-            </p>
-           
-
-           <h2>Zalmen  </h2>
-
-           <ul>
-            <li>reservada</li>
-            <li>somnolienta</li>
-            <li>evasiva</li>
-            </ul>
-        
-           <p>
-            Prefiere dormir antes que enfrentarse a sus problemas;
-            utiliza el sueño como refugio para no tener que lidiar con la realidad,
-            lo que mas le gusta es tener sueños lucidos.
-            
-           </p>
-           
-
-
-      
-          </section>
         </article>
       </main>
       <img
