@@ -57,7 +57,7 @@ const personajes = [
   const descripcionPersonaje = document.querySelector("#descripcion-personaje");
 
   const rasgosPersonaje = document.querySelector("#rasgos-personaje");
-  document.querySelector("#nombre-personaje");
+  
 
   let personajeActual = 0;
 

@@ -54,10 +54,7 @@ botonesProducto.forEach(function(boton) {
         ventanaProducto.showModal();
 
     });
-
 });
-
-
 // Botón para cerrar la ventana
 
 cerrarProducto.addEventListener("click", function() {
