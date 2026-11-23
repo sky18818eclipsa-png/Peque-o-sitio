@@ -3,62 +3,68 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Conoce mas de Liminalia</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/app.js" defer></script>
-    <script src="js/personaje-cursor.js" defer></script>
-    <script src="js/tienda.js" defer></script>
-    <script src="js/personajes.js" defer></script>
+      <title>Creador de Sueños - Liminalia</title>
+   
+       <link rel="stylesheet" href="css/estilos.css">
 
-
-       
+       <script src="js/personaje-cursor.js" defer></script>
+          
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+ </head>
 
-    </head>
-    <body>
-      <header class="encabezado">
+      <body>
+       <header class="encabezado">
         <div class="encabezado__contenido contenedor">
-          <div class="marca">
+             <div class="marca">
                 <img src="img/Liminalia logo.jpeg" alt="Logo de Liminalia">
-           </div>
+             </div>
 
             <nav class="navegacion" aria-label="Navegacion principal">
-             <a href="index.html" aria-current="page">Inicio</a>
+             <a href="index.html" >Inicio</a>
              <a href="Personajes.html">Universo</a>
-             <a href="Juego de mesa.html" >creador de sueños</a>
+             <a href="Juego de mesa.html" aria-current="page">creador de sueños</a>
              <a href="Tienda.html">Dream Store</a>
-          </div>
-         </header>
+            </nav>
+
+        </div>
+           
+      </header>
 
       <main class="contenedor">
         <article class="detalle">
-          <header>
-            <div>
-              <p class="etiqueta" >
-           <h1 class="titulo-CreadordeSueños">Creador de Sueños</h1>
-              <p>Haz click en el lienzo para comenzar a dibujar tu sueño.</p>
-            </div>
-        <div class="creador__lienzo">
-        <iframe
-          src="p5/creador/index.html"
-          title="Paint Liminalia"
-         ></iframe>
-        </div>
-      </div>
-       <img
-       id="personaje-cursor"
-       src="img/personajes/oveja.png"
-       alt=""
-       aria-hidden="true">
-      
-       </main>
+         <header>
+           <h1 class="titulo-CreadordeSueños">
+            Creador de Sueños
+           </h1>
+            <p>Haz clic en el lienzo para comenzar a dibujar tu sueño.</p>
+        </header>
+
+         <div class="creador__lienzo">
+            <iframe
+            src="p5/creador/index.html"
+            title="Paint Liminalia">
+            </iframe>
+         </div>
+
+         </article> 
+         </div>
+
+      </main>
+
+       
        <footer class="pie">
       <div class="contenedor">
         <p>Liminalia © 2026-2026 </p>
       </div>
     </footer>
+    <img
+       id="personaje-cursor"
+       src="img/personajes/oveja.png"
+       alt=""
+       aria-hidden="true">
+      
     </body>
     </html>
   

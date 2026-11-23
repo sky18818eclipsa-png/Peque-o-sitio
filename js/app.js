@@ -11,9 +11,8 @@ let presentes = presentesGuardados !== null
     : 0;
 
 
-// =====================================
 // SELECCIONAR ELEMENTOS DEL DOM
-// =====================================
+
 
 const tarjeta = document.querySelector(".tarjeta");
 const presentesHTML = document.querySelector("#presentes");
@@ -24,9 +23,9 @@ const mensajeHTML = document.querySelector("#mensaje");
 const botonAgregar = document.querySelector("#agregar");
 const botonRetirar = document.querySelector("#retirar");
 
-// =====================================
+
 // ELEGIR LA APARIENCIA DEL PERSONAJE
-// =====================================
+
 
 function obtenerImagenPersonaje(cantidad) {
 
@@ -55,9 +54,9 @@ function obtenerImagenPersonaje(cantidad) {
         return "img/personajes/oveja.png";
     }
 }
-// =====================================
+
 // CALCULAR EL ESTADO DEL SUEÑO
-// =====================================
+
 
 function evaluarAforo(presentes, capacidad) {
 
@@ -95,9 +94,8 @@ function evaluarAforo(presentes, capacidad) {
 }
 
 
-// =====================================
+
 //  MODIFICAR LA CANTIDAD DE PERSONAJES
-// =====================================
 
 function agregarPersonaje() {
 
@@ -114,9 +112,9 @@ function retirarPersonaje() {
 }
 
 
-// =====================================
+
 //  ACTUALIZAR INTERFAZ
-// =====================================
+
 
 function actualizarInterfaz() {
 
@@ -147,9 +145,9 @@ function actualizarInterfaz() {
 }
 
 
-// =====================================
+
 //  FUNCIONES PARA LOS EVENTOS
-// =====================================
+
 
 function manejarAgregar() {
 
@@ -164,18 +162,18 @@ function manejarRetirar() {
 }
 
 
-// =====================================
+
 // ESCUCHAR LOS EVENTOS
-// =====================================
+
 
 botonAgregar.addEventListener("click", manejarAgregar);
 
 botonRetirar.addEventListener("click", manejarRetirar);
 
 
-// =====================================
+
 // MOSTRAR EL ESTADO INICIAL
-// =====================================
+
 
 actualizarInterfaz();
 

@@ -1,6 +1,8 @@
 
+
 const personajes = [
 
+    
     {
         nombre: "Osluvio",
         imagen: "img/personajes/oso.png",
@@ -58,7 +60,6 @@ const personajes = [
 
   const rasgosPersonaje = document.querySelector("#rasgos-personaje");
   
-
   let personajeActual = 0;
 
     function mostrarPersonaje() {

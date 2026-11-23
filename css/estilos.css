@@ -23,7 +23,7 @@ body {
 }
 
 .presentacion__ojo {
-    width: 110%;
+    width: 100%;
     height: 460px;
     background: #000;
     overflow: hidden;
@@ -37,7 +37,7 @@ body {
 }
 img {
   display: block;
-  max-width: 102%;
+  max-width: 100%;
 }
 
 a:focus-visible,
@@ -83,28 +83,27 @@ a:focus-visible,
 /* BOTONES DE NAVEGACION*/
 
 .navegacion a {
-    display:flexbox ;
-     display: inline-flexbox;
+    
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 15px;
 
-    width: fit-content;
-    margin: 10px;
-
-    padding: 12px 35px;
-
-    background-color: #849653;
-    border: 2px solid #fefffd;
     
 }
 
 .navegacion a {
+    
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 35px;
+    background-color: #849653;
+    border: 2px solid #fefffd;
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .navegacion a:hover {
@@ -124,23 +123,25 @@ a:focus-visible,
     gap: 10px;
 }
 .titulo-con-gif img {
-    width: 40 px;
+    width: 40px;
     height: auto;
 }
 
 .Universo-gif {
-  display: flex;
+    display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    width: 230px;
-  }
+    width: 100%;
+}
 
 .Universo-gif img {
-   width:  830px;
-   height: 70px;
-  }
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
 
-  .titulo-universo {
+.titulo-universo {
     color: #ffffff;
 
     font-family: "Press Start 2P", monospace;
@@ -151,8 +152,8 @@ a:focus-visible,
     text-shadow: 3px 3px 0px #343d2b;
 }
   
-  .titulo-CreadordeSueños{
-   color: #ffffff;
+.titulo-CreadordeSueños{
+    color: #ffffff;
 
     font-family: "Press Start 2P", monospace;
 
@@ -162,16 +163,15 @@ a:focus-visible,
     text-shadow: 3px 3px 0px #343d2b;
 }
 
-   .titulo-quienes-somos { 
+.titulo-quienes-somos { 
     color: #ffffff;
 
     font-family: "Press Start 2P", monospace;
-
-    font-size: auto;
+    font-size: 20px;
     text-align:left;
 
     text-shadow: 3px 3px 0px #343d2b;
-    }
+}
  
 .tarjeta {
   margin-bottom: 2rem;
@@ -185,12 +185,6 @@ a:focus-visible,
   
 
   /*Color de la tarjeta de fondo */
-
-  
-
-  border-radius: 18 px;
-  
-
 }
 
 /*TARJETA DE ESTADO DE SUEÑO Y PERSONAJES PRESENTES*/
@@ -659,6 +653,7 @@ a:focus-visible,
     color: white;
     font-family: "Courier Prime", monospace;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .producto button:hover {

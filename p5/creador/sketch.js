@@ -43,7 +43,7 @@ const SEP2_Y = 90;
 
 async function setup() {
   createCanvas(854, 480);;
-  capa = createGraphics(854, 400); 
+  capa = createGraphics(854, 480); 
 
   imgs[1] = await loadImage('circulo.png');
   imgs[2] = await loadImage('cuadrado.png');

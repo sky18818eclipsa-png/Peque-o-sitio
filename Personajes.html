@@ -3,13 +3,11 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      
+      <title>Universo - Liminalia</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="js/app.js" defer></script>
+    
     <script src="js/personaje-cursor.js" defer></script>
-    <script src="js/tienda.js" defer></script>
     <script src="js/personajes.js" defer></script>
-
      
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +23,8 @@
            </div>
 
            <nav class="navegacion" aria-label="Navegacion principal">
-             <a href="index.html" aria-current="page">Inicio</a>
-             <a href="Personajes.html">Universo</a>
+             <a href="index.html" >Inicio</a>
+             <a href="Personajes.html" aria-current="page">Universo</a>
              <a href="Juego de mesa.html">creador de sueños</a>
              <a href="Tienda.html">Dream Store</a>
            </nav>
@@ -130,12 +128,11 @@
           <header class="ventana-personajes__barra">
             <span>☆ Personajes</span>
 
-              <div class="controles-ventana"></div>
-
-                <span>_</span>
-                <span>□</span>
-                <span>×</span>
-            </div>
+             <div class="controles-ventana" aria-hidden="true">
+              <span>_</span>
+              <span>□</span>
+              <span>×</span>
+             </div>
         </header>
            <!-- EL CONTENIDO -->
            
@@ -146,6 +143,7 @@
                 <img
                     id="imagen-personaje"
                     src="img/personajes/oso.png"
+                    
                     alt="Osluvio"
                 >
 
