@@ -16,7 +16,7 @@ const personajes = [
     {
         nombre: "Pompori",
         imagen: "img/personajes/conejo.png",
-        descripcion: "Está acostumbrado a conseguir todo lo que quiere y cree merecer siempre un trato especial. y se resiste a crecer, asumir responsabilidades y dejar de sentirse un rey, aunque su corona sea de cartón.",
+        descripcion: "Está acostumbrado a conseguir todo lo que quiere y cree merecer siempre un trato especial. Se resiste a crecer, asumir responsabilidades y dejar de sentirse un rey, aunque su corona sea de cartón.",
         rasgos: [
             "Consentido",
             "Orgulloso",
