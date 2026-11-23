@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dream Store | Liminalia</title>
+   <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/personaje-cursor.js" defer></script>
+    <script src="js/tienda.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+       <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="encabezado__contenido contenedor">
+
+            <div class="marca">
+                <img src="img/Liminalia logo.jpeg" alt="Logo de Liminalia">
+            </div>
+
+            <nav class="navegacion" aria-label="Navegación principal">
+                <a href="index.html">Inicio</a>
+                <a href="Personajes.html">Universo</a>
+                <a href="Juego de mesa.html">creador de sueños</a>
+                <a href="Tienda.html">Dream Store</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="contenedor">
+       <article class="detalle">
+        <section class="tienda">
+
+            <h1 class="titulo-tienda">Dream Store</h1>
+            <p class="descripcion-tienda">
+                Merch de Liminalia
+            </p>
+            <div class="catalogo">
+
+    <!-- BLINDBOX -->
+
+    <article class="producto">
+
+        <div class="producto__imagen">
+            <img src="img/tienda/blindbox.png" alt="Blindbox de Liminalia">
+        </div>
+
+        <h2>Blindbox Liminalia</h2>
+
+        <p>
+            Cuatro personajes, cuatro historias.
+            ¿Cuál de ellos encontrarás dentro de tu caja?
+        </p>
+
+        <button type="button" data-producto="blindbox">
+             Ver producto
+        </button> 
+
+    </article>
+
+
+    <!-- POSTER -->
+
+    <article class="producto">
+
+        <div class="producto__imagen">
+            <img src="img/tienda/poster.png" alt="Póster de Liminalia">
+        </div>
+
+        <h2>Póster Liminalia</h2>
+
+        <p>
+            Un recuerdo ilustrado de este extraño universo.
+        </p>
+
+        <button type="button" data-producto="poster">
+           Ver producto
+        </button>
+
+    </article>
+
+
+    <!-- JUEGO DE MESA -->
+
+    <article class="producto">
+
+        <div class="producto__imagen">
+            <img src="img/tienda/juego.png" alt="Juego de mesa Liminalia">
+        </div>
+
+        <h2>Juego de mesa Liminalia</h2>
+
+        <p>
+            Explora habitaciones, encuentra las llaves
+            y descubre cómo escapar del sueño.
+        </p>
+
+        <button type="button" data-producto="juego"> 
+            Ver producto
+        </button>
+    </article>
+
+  </div>
+
+        </section>
+        <!-- VENTANA DE PRODUCTO -->
+
+        <dialog class="ventana-producto" id="ventana-producto">
+
+        <button class="ventana-producto__cerrar" id="cerrar-producto"
+        type="button" aria-label="Cerrar ventana">
+        ×
+        </button>
+
+        <img id="imagen-detalle" src="" alt="">
+
+        <div class="ventana-producto__info">
+          <h2 id="nombre-detalle"></h2>
+          <p id="descripcion-detalle"></p>
+       </div>
+
+</dialog>
+
+     </article>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>Liminalia © 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
