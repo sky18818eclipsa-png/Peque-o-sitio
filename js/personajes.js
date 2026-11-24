@@ -18,34 +18,35 @@ const personajes = [
     {
         nombre: "Pompori",
         imagen: "img/personajes/conejo.png",
-        descripcion: "Está acostumbrado a conseguir todo lo que quiere y cree merecer siempre un trato especial. Se resiste a crecer, asumir responsabilidades y dejar de sentirse un rey, aunque su corona sea de cartón.",
+        descripcion: "Está acostumbrada a conseguir todo lo que quiere y cree merecer siempre un trato especial. Se resiste a crecer, asumir responsabilidades y dejar de sentirse un rey, aunque su corona sea de cartón.",
         rasgos: [
-            "Consentido",
-            "Orgulloso",
-            "Inmaduro"
+            "Consentida",
+            "Orgullosa",
+            "Inmadura"
         ]
     
     },
 
     {
-        nombre: "Sergio",
+        nombre: "Teresa",
         imagen: "img/personajes/oveja.png",
-        descripcion: "Es una oveja de negocios que vive atrapada en una rutina de trabajo constante. Principal mente se dedica a la contaduria pero es sobreexplotado, trabaja demasiado por el sueldo minimo, cumple con todo y siente que no puede permitirse descansar.",
+        descripcion: "Es una oveja de negocios que vive atrapada en una rutina de trabajo constante. Principal mente se dedica a la contaduria pero es sobreexplotada, trabaja demasiado por el sueldo minimo, cumple con todo y siente que no puede permitirse descansar.",
         
         rasgos: [
-            "Serio",
+            "Seria",
             "Responsable",
-            "Agotado"
+            "Agotada"
         ]
     },
 
     {
-        nombre: "Zalmen",
+        nombre: "Zalem",
         imagen: "img/personajes/serpiente.png",
         descripcion: "Prefiere dormir y evitar los problemas antes que enfrentarse a ellos. utiliza el sueño como refugio para no tener que lidiar con la realidad, lo que mas le gusta es tener sueños lucidos.",
         rasgos: [
-            "Reservada", 
-            "Somnolienta", "Evasiva"
+            "Reservado", 
+            "Somnoliento", 
+            "Evasivo"
         ]  
     
     }
